@@ -679,6 +679,15 @@ video {
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
+.bg-\[\] {
+  background-color: ;
+}
+
+.bg-\[\#F4F8FA\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(244 248 250 / var(--tw-bg-opacity));
+}
+
 .p-2 {
   padding: 0.5rem;
 }
@@ -729,6 +738,10 @@ video {
 .text-gray-900 {
   --tw-text-opacity: 1;
   color: rgb(17 24 39 / var(--tw-text-opacity));
+}
+
+.bg-blend-color-dodge {
+  background-blend-mode: color-dodge;
 }
 
 .hover\:bg-gray-700:hover {
