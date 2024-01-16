@@ -1,4 +1,6 @@
-import os
+#pip install serpapi
+#pip install google-search-results
+
 from serpapi import GoogleSearch
 
 inp_job = "java"
