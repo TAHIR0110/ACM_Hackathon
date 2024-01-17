@@ -7,7 +7,7 @@
 import pymongo
 
 try:
-    client = pymongo.MongoClient("mongodb+srv://Anand:Prestonplayz-1@cluster0.nljrcso.mongodb.net/?retryWrites=true&w=majority")
+    client = pymongo.MongoClient("mongodb+srv://Anand:<>@cluster0.nljrcso.mongodb.net/?retryWrites=true&w=majority")
 except:
     print("Error"+ Exception)
 
