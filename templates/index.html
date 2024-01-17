@@ -30,7 +30,7 @@
         <nav
           class="md:ml-auto flex flex-wrap items-center text-base justify-center"
         >
-          <a class="mr-5 hover:text-gray-900">ML Prediction</a>
+          <a href = "ml" class="mr-5 hover:text-gray-900">ML Prediction</a>
           <a class="mr-5 hover:text-gray-900">Mentors</a>
           <a class="mr-5 hover:text-gray-900">Counselling</a>
         </nav>
@@ -69,11 +69,13 @@
                 Explore <span aria-hidden="true">→</span>
               </button>
             </a>
-            <button
-              class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg"
-            >
-              Job Role Predictor
-            </button>
+            <a href="ml">
+              <button
+                class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg"
+              >
+                Job Role Predictor
+              </button>
+            </a>
           </div>
         </div>
         <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
@@ -313,6 +315,74 @@
         </div>
       </section>
     </section>
+    <br><br>
+    <section>
+    <h1 class="text-center text-[30px] md:text-[42px] text-black"
+      style="font-family: archia-font, 'Major Mono Display', monospace; font-weight: 600;">
+      Read for take-off?
+    </h1>
+    <h3 class="mt-5 md:mt-2 text-center text-[15px] md:text-[18px] text-gray-700" style="font-family: 'Varela Round';">
+      Click the button below to start your <span class="text-[#f82d38]"
+        style="font-family: 'Varela Round'; font-weight: bold;">Corporate Journey</span></h3>
+    <br>
+    <div class="flex flex-col justify-center overflow-hidden py-6">
+      <div class="max-w-7xl mx-auto">
+        <a href="https://www.youtube.com/@CodeWithHarry" target="_blank">
+          <div class="relative group" style="cursor:pointer;">
+            <div
+              class="absolute -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg blur opacity-25 dark:opacity-50 group-hover:opacity-100 transition duration-500 group-hover:duration-600"
+              style="cursor:pointer;"></div>
+            <div
+              class="relative px-7 py-6 bg-white ring-2 ring-gray-900/5 dark:ring-gray-400/20  rounded-lg leading-none flex items-top justify-start space-x-6 border-slate-500/20"
+              style="
+            padding-left: 40px;
+            padding-right: 40px;
+            padding-top: 18px;
+            padding-bottom: 18px;
+        " style="cursor:pointer;">
+              <!-- <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6.75 6.75C6.75 5.64543 7.64543 4.75 8.75 4.75H15.25C16.3546 4.75 17.25 5.64543 17.25 6.75V19.25L12 14.75L6.75 19.25V6.75Z"></path> -->
+              </svg>
+              <a href="ml">
+                <div>
+                  <p class="text-slate-800 items-center justify-center group-hover:text-[#ff0062] transition group-hover:font-semibold group-hover:duration-600 duration-500"
+                    style="font-family: 'varela round'; cursor: pointer;">Try Career Recommendation</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <p class="text-center text-gray-400 text-[20px]">or</p>
+    <div class="flex flex-col justify-center overflow-hidden py-6">
+      <div class="max-w-7xl mx-auto">
+        <a href="html/python-lec/python-lec.html">
+          <div class="relative group" style="cursor:pointer;">
+            <div
+              class="absolute -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg blur opacity-25 dark:opacity-50 group-hover:opacity-100 transition duration-500 group-hover:duration-600"
+              style="cursor:pointer;"></div>
+            <div
+              class="relative px-7 py-6 bg-black ring-2 ring-gray-900/5 dark:ring-gray-400/20  rounded-lg leading-none flex items-top justify-start space-x-6 border-slate-500/20"
+              style="
+            padding-left: 40px;
+            padding-right: 40px;
+            padding-top: 18px;
+            padding-bottom: 18px;
+        " style="cursor:pointer;">
+              <!-- <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6.75 6.75C6.75 5.64543 7.64543 4.75 8.75 4.75H15.25C16.3546 4.75 17.25 5.64543 17.25 6.75V19.25L12 14.75L6.75 19.25V6.75Z"></path> -->
+              </svg>
+              <div>
+                <p class="text-gray-300 items-center justify-center group-hover:text-[#00ffff] transition group-hover:font-semibold group-hover:duration-600 duration-500"
+                  style="font-family: 'varela round'; cursor: pointer;" id="getHere">Seek 1:1 Mentor Help</p>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+
+  </section>
     <script src="{{url_for('static',filename='scripts/homepage-animate-text.js')}}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/Flip.min.js"></script>
