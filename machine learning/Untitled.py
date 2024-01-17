@@ -78,12 +78,16 @@ for job_result in result['jobs_results']:
     Job_ID.append((job_result['job_id'],job_result['company_name'],job_result['title']))
 print('1---------------------------------------------------------------1')
 
+c=0
 for job_id in Job_ID:
+    if c>=5:
+        break
     params = {
         "api_key": "74667d45acf8d73e71f442fcea119219a9c88b09bb187292159a3fc88235289c",
         "engine": "google_jobs_listing",
         "q": str(job_id[0])
   }
+    c+=1
     search = GoogleSearch(params)
     results = search.get_dict()
     try:
