@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+h1{
+    font-family: 'Poppins' !important;
+    font-size: 50px!important;
+}
+
+.animatetext{
+    line-height: 1.06;
+    letter-spacing: -0.02em;
+}
+
+.mask {
+    height: 54px;
+    position: relative;
+    overflow: hidden;
+    margin-top: var(--offset);
+  }
+  
+  .mask span {
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    top: 54px;
+    padding-bottom: var(--offset);
+    
+    background-size: 100% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-repeat: no-repeat;
+  }
+  
+  .mask span[data-show] {
+    transform: translateY(-100%);
+    transition: .5s transform ease-in-out;
+  }
+  
+  .mask span[data-up] {
+    transform: translateY(-200%);
+    transition: .5s transform ease-in-out;
+  }
+  
+  .mask span:nth-child(1) {
+    background-image: linear-gradient(45deg, #0ecffe 50%, #07a6f1);
+  }
+  
+  .mask span:nth-child(2) {
+    background-image: linear-gradient(45deg, #18e198 50%, #0ec15d);
+  }
+  
+  .mask span:nth-child(3) {
+    background-image: linear-gradient(45deg, #8a7cfb 50%, #633e9c);
+  }
+  
+  .mask span:nth-child(4) {
+    background-image: linear-gradient(45deg, #fa7671 50%, #f45f7f);
+  }
+  
+
+  .responsivesyb
+  {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0,1fr));
+      gap: 50px;
+  }
+  
+  @media only screen and (max-width:984px)
+  {
+      .responsivesyb
+      {
+          display:grid;
+          grid-template-columns:repeat(2,minmax(0,1fr));
+          gap: 170px;
+          padding-left: 50px;
+          /* margin-left: 45px; */
+      }
+  
+      .resclass
+      {
+          margin-top: -10px !important;
+          padding-left: 10px !important;
+          align-items: center;
+      }
+  
+      .resa
+      {
+          padding-top: 25px !important;
+      }
+  }
+  
+  
+  @media only screen and (max-width:768px)
+  {
+      .responsivesyb
+      {
+          display:grid;
+          grid-template-columns:auto;
+          /* margin-left: 45px; */
+      }
+  
+      .resclass
+      {
+          margin-top: -10px !important;
+          margin-left: -30px !important;
+          align-items: center;
+      }
+  
+      .resa
+      {
+          padding-top: 5px !important;
+      }
+  }
+  
+  .animate-gradient {
+      background-size: 300%;
+      -webkit-animation: animatedgradient 6s ease infinite alternate;
+      -moz-animation: animatedgradient 6s ease infinite alternate;
+      animation: animatedgradient 6s ease infinite alternate;
+    }
+    
+    @keyframes animatedgradient {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+  
+  .will-change-transform {
+      will-change: transform;
+  }
+  
+  .cursor::after {
+      display: block;
+      content: '';
+      position: absolute;
+      width: 4px;
+      height: 100%;
+      background-color: #fff;
+      animation: cursor 0.6s linear infinite alternate;
+      will-change: opacity;
+    }
+     
+    @keyframes cursor {
+      0%,
+      40% {
+        opacity: 1;
+      }
+     
+      60%,
+      100% {
+        opacity: 0;
+      }
+    }  
+  
+  /* button shine code */
+  
+  .btn-shine {
+    top: 50%;
+    left: 50%;
+    padding: 12px 48px;
+    color: #fff;
+    background: linear-gradient(to right, #7f7e7e 0, #fff 10%, #7f7e7e 20%);
+    background-position: 0;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 3s infinite linear;
+    animation-fill-mode: forwards;
+    -webkit-text-size-adjust: none;
+    font-weight: 600;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  @-moz-keyframes shine {
+    0% {
+      background-position: 0;
+    }
+    60% {
+      background-position: 180px;
+    }
+    100% {
+      background-position: 180px;
+    }
+  }
+  @-webkit-keyframes shine {
+    0% {
+      background-position: 0;
+    }
+    60% {
+      background-position: 180px;
+    }
+    100% {
+      background-position: 180px;
+    }
+  }
+  @-o-keyframes shine {
+    0% {
+      background-position: 0;
+    }
+    60% {
+      background-position: 180px;
+    }
+    100% {
+      background-position: 180px;
+    }
+  }
+  @keyframes shine {
+    0% {
+      background-position: 0;
+    }
+    60% {
+      background-position: 180px;
+    }
+    100% {
+      background-position: 180px;
+    }
+  }
+  
+  .gridBlock {
+    opacity: 0;
+  }
+  
+  /* Grid almost fully pulled from https://www.rino-pelle.com/ */
+  .grid-container {
+    width: 100vw;
+    height: 400vh;
+    position: relative;
+  }
+  .grid {
+    top: 0;
+    left: 0;
+    /* z-index: 0; */
+    width: 70vw;
+    height: 60vw;
+    margin: 0 calc(100vw / 20 * 3);
+    position: absolute;
+  }
+  @media only screen and (max-width: 580px) {
+    .grid {
+      margin: 0;
+      width: 100vw;
+      height: 89.444vw;
+    }
+  }
+  .gridBlock {
+    background-size: cover;
+  }
+  .gridLayer {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    will-change: transform;
+    transform-origin: 44.951% 50%;
+  }
+  .gridLayer:nth-child(1) .gridBlock {
+    top: 5vw;
+    left: 20vw;
+    width: 10vw;
+    height: 10vw;
+  }
+  @media only screen and (max-width: 580px) {
+    .gridLayer:nth-child(1) .gridBlock {
+      top: 11.111vw;
+      left: 23.889vw;
+      width: 15vw;
+      height: 15vw;
+    }
+  }
+  .gridLayer:nth-child(2) .gridBlock {
+    top: 0;
+    left: 32.5vw;
+    width: 15vw;
+    height: 15vw;
+  }
+  @media only screen and (max-width: 580px) {
+    .gridLayer:nth-child(2) .gridBlock {
+      top: 0;
+      left: 43.333vw;
+      width: 26.389vw;
+      height: 26.389vw;
+    }
+  }
+  .gridLayer:nth-child(3) .gridBlock {
+    left: 0;
+    top: 25vw;
+    width: 15vw;
+    height: 15vw;
+  }
+  @media only screen and (max-width: 580px) {
+    .gridLayer:nth-child(3) .gridBlock {
+      top: 30.278vw;
+      left: 0;
+      width: 26.389vw;
+      height: 26.389vw;
+    }
+  }
+  .gridLayer:nth-child(4) .gridBlock {
+    top: 17.5vw;
+    left: 17.5vw;
+    width: 30vw;
+    height: 30vw;
+  }
+  @media only screen and (max-width: 580px) {
+    .gridLayer:nth-child(4) .gridBlock {
+      top: 30.278vw;
+      left: 30.278vw;
+      width: 39.444vw;
+      height: 39.444vw;
+    }
+  }
+  .gridLayer:nth-child(5) {
+    /* z-index: 1; */
+  }
+  .gridLayer:nth-child(5) .gridBlock {
+    top: 20vw;
+    left: 50vw;
+    width: 5vw;
+    height: 5vw;
+  }
+  @media only screen and (max-width: 580px) {
+    .gridLayer:nth-child(5) .gridBlock {
+      top: 23.889vw;
+      left: 73.889vw;
+      width: 15.278vw;
+      height: 15.278vw;
+    }
+  }
+  .gridLayer:nth-child(5) a {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .gridLayer:nth-child(5) svg {
+    width: 1.75vw;
+  }
+  @media only screen and (max-width: 580px) {
+    .gridLayer:nth-child(5) svg {
+      width: 4.722vw;
+    }
+  }
+  .gridLayer:nth-child(6) .gridBlock {
+    left: 50vw;
+    top: 27.5vw;
+    width: 20vw;
+    height: 20vw;
+  }
+  @media only screen and (max-width: 580px) {
+    .gridLayer:nth-child(6) .gridBlock {
+      top: 43.889vw;
+      left: 73.889vw;
+      width: 26.389vw;
+      height: 26.389vw;
+    }
+  }
+  .gridLayer:nth-child(7) .gridBlock {
+    left: 10vw;
+    top: 42.5vw;
+    width: 5vw;
+    height: 5vw;
+  }
+  @media only screen and (max-width: 580px) {
+    .gridLayer:nth-child(7) .gridBlock {
+      display: none;
+    }
+  }
+  .gridLayer:nth-child(8) .gridBlock {
+    bottom: 5vw;
+    left: 42.5vw;
+    width: 5vw;
+    height: 5vw;
+  }
+  @media only screen and (max-width: 580px) {
+    .gridLayer:nth-child(8) .gridBlock {
+      display: none;
+    }
+  }
+  .gridLayer:nth-child(9) .gridBlock {
+    bottom: 0;
+    left: 50vw;
+    width: 10vw;
+    height: 10vw;
+  }
+  @media only screen and (max-width: 580px) {
+    .gridLayer:nth-child(9) .gridBlock {
+      top: 73.889vw;
+      left: 58.889vw;
+      width: 15.278vw;
+      height: 15.278vw;
+    }
+  }
+  .gridBlock {
+    display: block;
+    position: absolute;
+  }
+  
+  nav{
+    z-index: 100;
+  }
+  
+  html, body {
+    overflow-x: hidden;
+  }
+  body {
+    position: relative
+  }
+  
+  .fade-up {
+    opacity: 0;
+    animation: fadeUp 2s ease-in-out forwards;
+  }
+  
+  @keyframes fadeUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
