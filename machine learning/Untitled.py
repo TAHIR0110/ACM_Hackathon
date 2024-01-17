@@ -40,8 +40,6 @@ knn_model.fit(X_train_scaled, y_train)
 
 y_pred = knn_model.predict(X_test_scaled)
 
-accuracy = accuracy_score(y_test, y_pred)
-print(f"KNN Accuracy: {accuracy}")
 
 user_input = {}
 for column in X.columns:
@@ -57,14 +55,6 @@ top_3_classes = user_predictions_proba.argsort()[0, -3:][::-1]
 
 label_encoder.inverse_transform(top_3_classes)
 
-
-# In[62]:
-
-
-print(f"KNN Accuracy: {accuracy}")
-
-
-# In[ ]:
 
 
 
