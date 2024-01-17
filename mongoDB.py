@@ -7,7 +7,7 @@
 import pymongo
 
 try:
-    client = pymongo.MongoClient("mongodb+srv://Anand:<>@cluster0.nljrcso.mongodb.net/?retryWrites=true&w=majority")
+    client = pymongo.MongoClient("mongodb+srv://Anand:Prestonplayz-1@cluster0.nljrcso.mongodb.net/?retryWrites=true&w=majority")
 except:
     print("Error"+ Exception)
 
@@ -16,10 +16,11 @@ mymongoDB = client["ACM_Hackathon"]
 collection = mymongoDB["User Info"]
 
 
-#collection.insert_one()
+#collection.insert_one({"name":"atharv","age":20})
+#collection.delete_one()
 #collection.delete_one()
 #collection.update_one()
-
-records = collection.find({})
-for i in records:
+user_data = collection.find_one({}, { "sort": { "createdAt": -1 } })
+for i in user_data:
     print(i)
+

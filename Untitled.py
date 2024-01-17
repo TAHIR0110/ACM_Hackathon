@@ -3,6 +3,8 @@
 
 # In[61]:
 
+from serpapi import GoogleSearch
+
 
 import numpy as np
 import pandas as pd
@@ -64,7 +66,6 @@ label_encoder.inverse_transform(top_3_classes)
 print(f"KNN Accuracy: {accuracy}")
 
 
-# In[ ]:
 
 
 
